@@ -45,7 +45,7 @@ class BasicBlock(nn.Module):
 
 class wrn(nn.Module):
     def __init__(self, depth=26, dataset='cifar10', cfg=None):
-        super(ResNetCifar, self).__init__()
+        super(wrn, self).__init__()
         assert (depth - 2) % 6 == 0, 'depth should be 6n+2'
         width = 12
         n = (depth - 2) // 6
