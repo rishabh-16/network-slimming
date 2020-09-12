@@ -1,0 +1,21 @@
+checkpoints/*
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# Environments
+.env
+.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+__pypackages__/
+__pycache__
+.__pycache__
+.vscode
+data/
+pythonenv3.8
+*.ipynb
+logs/*
