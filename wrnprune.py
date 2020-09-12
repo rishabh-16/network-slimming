@@ -194,7 +194,7 @@ for layer_id in range(len(old_modules)):
 
             # If the current convolution is not the last convolution in the residual block, then we can change the 
             # number of output channels. Currently we use `conv_count` to detect whether it is such convolution.
-            if conv_count % 3 != 1:
+            if conv_count % 2 != 1:
                 w1 = w1[idx1.tolist(), :, :, :].clone()
             m1.weight.data = w1.clone()
             continue
