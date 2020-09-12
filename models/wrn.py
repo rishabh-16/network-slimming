@@ -19,7 +19,7 @@ class BasicBlock(nn.Module):
         self.select = channel_selection(inplanes)
         self.conv1 = nn.Conv2d(cfg[0], cfg[1], kernel_size=3, stride=stride, padding=1, bias=False)
         self.bn2 = nn.BatchNorm2d(cfg[1])
-        self.conv2 = nn.Conv2d(cfg[1], cfg[1], kernel_size=3, stride=1, padding=1, bias=False)
+        self.conv2 = nn.Conv2d(cfg[1], planes, kernel_size=3, stride=1, padding=1, bias=False)
         self.relu = nn.ReLU(inplace=True)
         self.downsample = downsample
         self.stride = stride
